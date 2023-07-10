@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>CSS grid lines naming</title>
+<style>
+body{
+       font-family: arial;
+	   font-size: 18px;
+ 
+}
+
+.container{
+             background: #eee;
+			 width: 700px;
+			 margin: 70px 0 0 50px;
+			 display: grid;
+			 grid-template-columns: repeat(3, 1fr) ;
+             grid-template-rows: [header-start]120px[header-end menu-start] 50px [menu-end box-start] 100px [box end content-start] 150px [content-end footer-start] 20px[footer-end];
+			 grid-gap: 10px;
+
+}
+.header{
+         background: orangered;
+		 grid-row: header-start / header-end;
+		 grid-column: 1 / 4;
+		 
+}
+.menu{
+         background: hotpink;
+		 grid-gap: menu-start / menu-end; 
+		 grid-column: 1 / -1;
+}
+.box1{
+         background: royalblue;
+}
+.box2{
+         background: goldenrod;
+}
+.content{
+         background: tan;
+		 grid-row: content-start / content-end;
+		 grid-column: 1 / 3;
+		 
+}
+.sidebar{
+         background: skyblue;
+		 grid-row: box-start / content-end;
+		 grid-column: 3 / -1;
+}
+.footer{
+         background: yellow;
+		 grid-row: footer-start / footer-end;
+		 grid-column: 1 / -1;
+}
+
+</style>
+</head>
+
+<body>
+<h1>CSS grid lines naming</h1>
+<div class="container">
+                     <div class="header">header</div>
+					 <div class="menu">menu</div>
+					 <div class="box1">box1</div>
+					 <div class="box2">box2</div>
+					 <div class="content">content</div>
+					 <div class="sidebar">sidebar</div>
+					 <div class="footer">footer</div>
+					 
+
+</div>
+</body>
+</html>					

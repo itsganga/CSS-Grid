@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>CSS grid order </title>
+<style>
+body{
+      font-family: arial;
+	  font-size: 16px;
+}
+.container{
+              background: #eee;
+			  width: 650px;
+			  margin: 45px auto 0;
+			  
+			  display: grid;
+			  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			  grid-template-rows: repeat(2, 120px);
+			  
+			  
+			  grid-auto-rows: 80px;
+			  
+
+}
+.items1{background: orangered; order: 6;}
+.items2{background: yellowgreen;
+        order:1;
+}
+.items3{background: MEDIUMPURPLE; order: 3;}
+.items4{background: hotpink; order: 2;}
+.items5{background: tan;}
+.items6{background: royalblue; order:5;}
+
+
+
+</style>
+</head>
+<body>
+<h1>CSS grid order </h1>
+<div class="container">
+               <div class="items1">One</div>
+			   <div class="items2">Two</div>
+			   <div class="items3">Three</div>
+			   <div class="items4">Four</div>
+			   <div class="items5">Five</div>
+			   <div class="items6">Six</div>
+			   
+			   
+
+
+
+</body>
+</html>

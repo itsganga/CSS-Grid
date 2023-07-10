@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="em" >
+<head>
+<title> Gird fit content</title>
+<style>
+body{
+      font-family: arial;
+	  font-size: 16px;
+}
+.container{
+              background: #eee;
+			  width: 600px;
+			  margin: 50px auto 0;
+			  
+			  display: grid;
+			  grid-template-columns: fit-content(200px) fit-content(300px) 1fr; 
+			  grid-template-rows: repeat(2, 100px);
+			  grid-auto-row: 80px;
+			
+			  }
+			  
+.items1{background: orangered;}
+.items2{background: yellowgreen;}
+.items3{background: MEDIUMPURPLE;}
+.items4{background: hotpink; }
+.items5{background: tan;}
+.items6{background: royalblue;}
+</style>
+</head>
+<body>
+<h1>Grid fit content</h1>
+<div class="container">
+               <div class="items1"> In the current scenario, research into the creation of renewable energy from organic resources and waste</div>
+			   <div class="items2">Two</div>
+			   <div class="items3">Three</div>
+			   <div class="items4">Four</div>
+			   <div class="items5">Five In the current scenario, research into the creation of renewable energy from organic resources and wasteIn the current scenario, research into the creation of renewable energy from organic resources and waste</div>
+			   <div class="items6">Six</div>
+			   
+			   
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>CSS Grid item positioning</title>
+<style>
+body{
+       font-family: arial, helvetica;
+	   font-size: 18px;
+}
+.container{
+             background: #eee;
+			 width: 700px;
+			 margin: 70px 0 0 50px;
+			 display: grid;
+			 grid-template-columns: repeat(3, 1fr) ;
+             grid-template-rows: 100px 100px;
+			 grid-gap: 25px 50px;
+    
+}
+.itoms1{
+         background: orangered;
+		 grid-row-start: 2;
+		 grid-row-end: 3;
+		 grid-column-start: 3;
+		 grid-column-end: 4;
+
+}
+.itoms2{
+         background: hotpink;
+
+}
+.itoms3{
+         background: royalblue;
+
+}
+.itoms4{
+         background: goldenrod;
+
+}
+.itoms5{
+         background: gray;
+		 
+}
+.itoms6{
+         background: tan;
+		 /*rid-row-start: 1;
+		 grid-row-end: 2;
+		 grid-column-start: 1;
+		 grid-column-end: 2;*/
+		 grid-area: 1 / 1 / 2 / 2;
+
+}
+
+</style>
+</head>
+<body>
+<h1> CSS Grid item positioning</h1>
+<div class="container">
+<div class="itoms1">First</div>
+<div class="itoms2">Second</div>
+<div class="itoms3">Third</div>
+<div class="itoms4">Fourth</div>
+<div class="itoms5">Fifth</div>
+<div class="itoms6">Sixth</div>
+</div>
+
+</body>
+</html>

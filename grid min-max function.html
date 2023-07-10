@@ -1,0 +1,70 @@
+grid-area: header;<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>CSS Grid Gap</title>
+<style>
+body{
+       font-family: arial, helvetica;
+	   font-size: 18px;
+}
+.container{
+             background: #eee;
+			 width: 80%;
+			 margin: 70px 0 0 50px;
+			 display: grid;
+			 grid-template-columns: minmax(150px, 300px) 1fr 1fr min-content ;
+             grid-template-rows: repeat(2,minmax(100px, min-content));
+			 grid-gap: 5px;
+    
+}
+.itoms1{
+         background: orangered;
+
+}
+.itoms2{
+         background: hotpink;
+
+}
+.itoms3{
+         background: royalblue;
+
+}
+.itoms4{
+         background: goldenrod;
+
+}
+.itoms5{
+         background: gray;
+
+}
+.itoms6{
+         background: tan;
+
+}
+.itoms7{
+         background: lightpink;
+
+}
+.itoms8{
+         background: yellowgreen;
+
+}
+
+</style>
+</head>
+<body>
+<h1> CSS Grid Gap</h1>
+<div class="container">
+<div class="itoms1">One of the my best freind</div>
+<div class="itoms2">Two</div>
+<div class="itoms3">Three</div>
+<div class="itoms4">Four people are living in the city for job and they are not live at a single place due tro jobv locations</div>
+<div class="itoms5">Five </div>
+<div class="itoms6">Six </div>
+<div class="itoms7">Seven </div>
+<div class="itoms8">Eight</div>
+
+</div>
+
+</body>
+</html>

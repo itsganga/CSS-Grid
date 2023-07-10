@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>CSS Grid items aligning </title>
+<style>
+body{
+      font-family: arial;
+	  font-size: 16px;
+}
+.container{
+              background: #eee;
+			  width: 700px;
+			  margin: 45px auto 0;
+			  
+			  display: grid;
+			  grid-template-columns: repeat(2, 150px);
+			  grid-template-rows: repeat(2, 100px);
+			  grid-gap: 15px;
+			  
+			  grid-auto-rows: 50px;
+			  /*align-items: start;
+			  justify-items: start;*/
+			  place-items: center start;
+			  
+			 
+
+}
+.items1{background: orangered;}
+.items2{background: yellowgreen;}
+.items3{background: MEDIUMPURPLE;
+        grid-row: span 3;
+}
+.items4{background: hotpink;
+          justify-self: end;
+		  }
+.items5{background: tan;}
+.items6{background: royalblue;}
+.items7{background: orchid;
+       grid-column: span 2;
+	   }
+.items8{background: goldenrod;}
+
+
+</style>
+</head>
+<body>
+<h1>CSS Grid items aligning </h1>
+<div class="container">
+               <div class="items1">One</div>
+			   <div class="items2">Two</div>
+			   <div class="items3">Three</div>
+			   <div class="items4">Four</div>
+			   <div class="items5">Five</div>
+			   <div class="items6">Six</div>
+			   <div class="items7">Seven</div>
+			   <div class="items8">Eight</div>
+			   
+
+
+
+</body>
+</html>

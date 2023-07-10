@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>Overlapping Grid Items </title>
+<style>
+body{
+      font-family: arial;
+	  font-size: 16px;
+}
+.container{
+              background: #eee;
+			  width: 300px;
+			  margin: 45px auto 0;
+			  
+			  display: grid;
+			  grid-template-columns: repeat(2, 150px);
+			  grid-template-rows: repeat(2, 150px);
+			  
+			  
+			 
+
+}
+.items1{background: orangered;
+         grid-column: 1 / span 2;
+		 grid-row: 1 / span 2;
+		 align-self: start;
+		 max-width: 150px;
+}
+.items2{background: yellowgreen;
+                     grid-column: 1 / span 2;
+					 grid-row: 1 / span 2;
+					 align-self: center;
+					 justify-self: center;
+					 max-width: 150px;
+ }
+.items3{background: MEDIUMPURPLE;
+                    max-width: 150px;
+					grid-column: 1 / span 2;
+					 grid-row: 1 / span 2;
+					 align-self: end;
+					 justify-self: end;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+<h1>Overlapping Grid Items </h1>
+<div class="container">
+               <div class="items1">One Five In the current scenario, research into the creation of renewable energy from organic resources and wasteIn the current scenario</div>
+			   <div class="items2">Two Five In the current scenario, research into the creation of renewable energy from organic resources and wasteIn the current scenario</div>
+			   <div class="items3">Three Five In the current scenario, research into the creation of renewable energy from organic resources and wasteIn the current scenario</div>
+			   
+			   
+
+
+
+</body>
+</html>
